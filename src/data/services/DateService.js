@@ -29,7 +29,7 @@ export const DataService = {
             type,
         }
     },
-    RelativeTime(date) {
+    relativeTime(date) {
         const { difference, type } = this.difference(date);
         return RelativeFormatter.format(-difference, type);
     }
